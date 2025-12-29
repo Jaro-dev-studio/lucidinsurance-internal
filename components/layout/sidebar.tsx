@@ -24,7 +24,7 @@ interface SidebarSection {
 }
 
 /**
- * CUSTOMIZE: Update these sidebar sections for dashboard navigation
+ * Lucidinsurance sidebar navigation
  */
 const sidebarSections: SidebarSection[] = [
   {
@@ -49,8 +49,8 @@ const sidebarSections: SidebarSection[] = [
         ),
       },
       {
-        label: "Analytics",
-        href: "/analytics",
+        label: "AI Assistant",
+        href: "/assistant",
         icon: (
           <svg
             className="h-5 w-5"
@@ -62,39 +62,20 @@ const sidebarSections: SidebarSection[] = [
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+              d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
             />
           </svg>
         ),
-        badge: "New",
+        badge: "AI",
       },
     ],
   },
   {
-    title: "Workspace",
+    title: "Claims Management",
     items: [
       {
-        label: "Projects",
-        href: "/projects",
-        icon: (
-          <svg
-            className="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
-            />
-          </svg>
-        ),
-      },
-      {
-        label: "Documents",
-        href: "/documents",
+        label: "All Claims",
+        href: "/claims",
         icon: (
           <svg
             className="h-5 w-5"
@@ -112,8 +93,27 @@ const sidebarSections: SidebarSection[] = [
         ),
       },
       {
-        label: "Team",
-        href: "/team",
+        label: "Workflows",
+        href: "/workflows",
+        icon: (
+          <svg
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
+            />
+          </svg>
+        ),
+      },
+      {
+        label: "Clients",
+        href: "/clients",
         icon: (
           <svg
             className="h-5 w-5"
@@ -133,8 +133,70 @@ const sidebarSections: SidebarSection[] = [
     ],
   },
   {
-    title: "Account",
+    title: "Insights",
     items: [
+      {
+        label: "Analytics",
+        href: "/analytics",
+        icon: (
+          <svg
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+            />
+          </svg>
+        ),
+      },
+      {
+        label: "Reports",
+        href: "/reports",
+        icon: (
+          <svg
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+            />
+          </svg>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Configuration",
+    items: [
+      {
+        label: "AI Models",
+        href: "/integrations",
+        icon: (
+          <svg
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            />
+          </svg>
+        ),
+      },
       {
         label: "Settings",
         href: "/settings",
@@ -172,8 +234,7 @@ export interface SidebarProps {
 }
 
 /**
- * Sidebar navigation component for dashboard layouts.
- * CUSTOMIZE: Update navigation items in sidebarSections array.
+ * Sidebar navigation component for Lucidinsurance dashboard.
  */
 export function Sidebar({
   className,
@@ -213,7 +274,7 @@ export function Sidebar({
                     {item.icon}
                     <span className="flex-1">{item.label}</span>
                     {item.badge && (
-                      <span className="rounded-full bg-primary px-2 py-0.5 text-xs font-medium text-primary-foreground">
+                      <span className="rounded-full bg-accent px-2 py-0.5 text-xs font-medium text-accent-foreground">
                         {item.badge}
                       </span>
                     )}
@@ -223,6 +284,21 @@ export function Sidebar({
             </nav>
           </div>
         ))}
+      </div>
+      
+      {/* Help section at bottom */}
+      <div className="border-t border-border p-4">
+        <div className="rounded-lg bg-muted p-3">
+          <div className="flex items-center gap-2 text-sm font-medium text-foreground">
+            <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Need Help?
+          </div>
+          <p className="mt-1 text-xs text-muted-foreground">
+            Access our AI assistant for guidance
+          </p>
+        </div>
       </div>
     </aside>
   );

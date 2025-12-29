@@ -15,12 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 /**
- * CUSTOMIZE: Update metadata for client branding
+ * Lucidinsurance - AI-Powered Insurance Management Platform
  */
 export const metadata: Metadata = {
-  title: "DemoApp - Dashboard",
-  description: "Your product dashboard. Manage your projects, analytics, and team.",
-  keywords: ["dashboard", "product", "saas", "platform"],
+  title: "Lucidinsurance - AI-Powered Claims Management",
+  description: "Streamline your insurance operations with AI-powered claims processing, automated workflows, and intelligent client interactions.",
+  keywords: ["insurance", "claims", "AI", "automation", "management", "SaaS"],
 };
 
 /**

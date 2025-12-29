@@ -6,27 +6,27 @@ import { cn } from "@/lib/utils";
 import { Avatar } from "@/components/ui/avatar";
 
 /**
- * CUSTOMIZE: Notification data
+ * Insurance-focused notifications
  */
 const notifications = [
   {
     id: 1,
-    title: "New project created",
-    description: "Sarah created 'Marketing Campaign'",
+    title: "New claim submitted",
+    description: "Auto claim #CLM-2024-0892 requires review",
     time: "2 min ago",
     unread: true,
   },
   {
     id: 2,
-    title: "Team member joined",
-    description: "Alex Rivera joined your team",
+    title: "AI Assistant update",
+    description: "3 claims processed automatically",
     time: "1 hour ago",
     unread: true,
   },
   {
     id: 3,
-    title: "Document shared",
-    description: "Mike shared 'Q4 Strategy' with you",
+    title: "Policy renewal reminder",
+    description: "12 policies expiring this week",
     time: "3 hours ago",
     unread: false,
   },
@@ -55,13 +55,15 @@ export function Header({ className }: HeaderProps) {
       )}
     >
       <div className="flex h-14 items-center justify-between px-4 md:px-6">
-        {/* CUSTOMIZE: Replace with client logo */}
+        {/* Lucidinsurance Logo */}
         <Link href="/" className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-            <span className="text-sm font-bold text-primary-foreground">D</span>
+            <svg className="h-5 w-5 text-primary-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
           </div>
           <span className="text-lg font-semibold text-foreground">
-            DemoApp
+            Lucidinsurance
           </span>
         </Link>
 
@@ -182,11 +184,10 @@ export function Header({ className }: HeaderProps) {
               aria-expanded={isUserMenuOpen}
               aria-haspopup="true"
             >
-              {/* CUSTOMIZE: Update with actual user data */}
-              <Avatar fallback="JD" size="sm" />
+              <Avatar fallback="SA" size="sm" />
               <div className="hidden text-left md:block">
-                <p className="text-sm font-medium text-foreground">John Doe</p>
-                <p className="text-xs text-muted-foreground">john@example.com</p>
+                <p className="text-sm font-medium text-foreground">Sarah Adams</p>
+                <p className="text-xs text-muted-foreground">Claims Manager</p>
               </div>
               <svg
                 className={cn(
@@ -217,10 +218,10 @@ export function Header({ className }: HeaderProps) {
                 <div className="absolute right-0 z-20 mt-2 w-56 rounded-lg border border-border bg-background py-1 shadow-lg">
                   <div className="border-b border-border px-4 py-3 md:hidden">
                     <p className="text-sm font-medium text-foreground">
-                      John Doe
+                      Sarah Adams
                     </p>
                     <p className="text-xs text-muted-foreground">
-                      john@example.com
+                      Claims Manager
                     </p>
                   </div>
                   {/* CUSTOMIZE: Update dropdown menu items */}
