@@ -15,12 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 /**
- * Lucidinsurance - AI-Powered Insurance Management Platform
+ * LucidAds - AI-Powered Advertising Management Platform
  */
 export const metadata: Metadata = {
-  title: "Lucidinsurance - AI-Powered Claims Management",
-  description: "Streamline your insurance operations with AI-powered claims processing, automated workflows, and intelligent client interactions.",
-  keywords: ["insurance", "claims", "AI", "automation", "management", "SaaS"],
+  title: "LucidAds - AI-Powered Advertising Dashboard",
+  description: "Unified advertising management platform with AI-powered insights. Track campaigns across Meta, Google, TikTok, and YouTube from a single dashboard.",
+  keywords: ["advertising", "ads", "AI", "marketing", "Meta", "Google Ads", "TikTok", "analytics", "SaaS"],
 };
 
 /**

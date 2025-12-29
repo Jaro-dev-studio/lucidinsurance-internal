@@ -24,7 +24,7 @@ interface SidebarSection {
 }
 
 /**
- * Lucidinsurance sidebar navigation
+ * LucidAds sidebar navigation
  */
 const sidebarSections: SidebarSection[] = [
   {
@@ -71,11 +71,11 @@ const sidebarSections: SidebarSection[] = [
     ],
   },
   {
-    title: "Claims Management",
+    title: "Advertising",
     items: [
       {
-        label: "All Claims",
-        href: "/claims",
+        label: "Campaigns",
+        href: "/campaigns",
         icon: (
           <svg
             className="h-5 w-5"
@@ -87,14 +87,20 @@ const sidebarSections: SidebarSection[] = [
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
+            />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
             />
           </svg>
         ),
       },
       {
-        label: "Workflows",
-        href: "/workflows",
+        label: "Creatives",
+        href: "/creatives",
         icon: (
           <svg
             className="h-5 w-5"
@@ -106,14 +112,14 @@ const sidebarSections: SidebarSection[] = [
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
+              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
             />
           </svg>
         ),
       },
       {
-        label: "Clients",
-        href: "/clients",
+        label: "Audiences",
+        href: "/audiences",
         icon: (
           <svg
             className="h-5 w-5"
@@ -125,7 +131,7 @@ const sidebarSections: SidebarSection[] = [
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+              d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
             />
           </svg>
         ),
@@ -179,7 +185,7 @@ const sidebarSections: SidebarSection[] = [
     title: "Configuration",
     items: [
       {
-        label: "AI Models",
+        label: "Integrations",
         href: "/integrations",
         icon: (
           <svg
@@ -192,7 +198,7 @@ const sidebarSections: SidebarSection[] = [
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
             />
           </svg>
         ),
@@ -234,7 +240,7 @@ export interface SidebarProps {
 }
 
 /**
- * Sidebar navigation component for Lucidinsurance dashboard.
+ * Sidebar navigation component for LucidAds dashboard.
  */
 export function Sidebar({
   className,
@@ -288,15 +294,15 @@ export function Sidebar({
       
       {/* Help section at bottom */}
       <div className="border-t border-border p-4">
-        <div className="rounded-lg bg-muted p-3">
+        <div className="rounded-lg bg-primary/5 p-3">
           <div className="flex items-center gap-2 text-sm font-medium text-foreground">
             <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
-            Need Help?
+            AI Insights Ready
           </div>
           <p className="mt-1 text-xs text-muted-foreground">
-            Access our AI assistant for guidance
+            Ask our AI about your campaign performance
           </p>
         </div>
       </div>

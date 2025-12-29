@@ -6,27 +6,27 @@ import { cn } from "@/lib/utils";
 import { Avatar } from "@/components/ui/avatar";
 
 /**
- * Insurance-focused notifications
+ * Advertising-focused notifications
  */
 const notifications = [
   {
     id: 1,
-    title: "New claim submitted",
-    description: "Auto claim #CLM-2024-0892 requires review",
-    time: "2 min ago",
+    title: "Campaign performing well",
+    description: "Summer Sale campaign CTR up 23%",
+    time: "5 min ago",
     unread: true,
   },
   {
     id: 2,
-    title: "AI Assistant update",
-    description: "3 claims processed automatically",
+    title: "Budget alert",
+    description: "Google Ads campaign at 85% budget",
     time: "1 hour ago",
     unread: true,
   },
   {
     id: 3,
-    title: "Policy renewal reminder",
-    description: "12 policies expiring this week",
+    title: "New AI insight",
+    description: "Recommended audience expansion available",
     time: "3 hours ago",
     unread: false,
   },
@@ -38,8 +38,7 @@ export interface HeaderProps {
 }
 
 /**
- * Dashboard header component with logo and user menu.
- * CUSTOMIZE: Update logo and user information per client.
+ * Dashboard header component for LucidAds.
  */
 export function Header({ className }: HeaderProps) {
   const [isUserMenuOpen, setIsUserMenuOpen] = React.useState(false);
@@ -55,15 +54,15 @@ export function Header({ className }: HeaderProps) {
       )}
     >
       <div className="flex h-14 items-center justify-between px-4 md:px-6">
-        {/* Lucidinsurance Logo */}
+        {/* LucidAds Logo */}
         <Link href="/" className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
             <svg className="h-5 w-5 text-primary-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           </div>
           <span className="text-lg font-semibold text-foreground">
-            Lucidinsurance
+            LucidAds
           </span>
         </Link>
 
@@ -184,10 +183,10 @@ export function Header({ className }: HeaderProps) {
               aria-expanded={isUserMenuOpen}
               aria-haspopup="true"
             >
-              <Avatar fallback="SA" size="sm" />
+              <Avatar fallback="JK" size="sm" />
               <div className="hidden text-left md:block">
-                <p className="text-sm font-medium text-foreground">Sarah Adams</p>
-                <p className="text-xs text-muted-foreground">Claims Manager</p>
+                <p className="text-sm font-medium text-foreground">Jake K.</p>
+                <p className="text-xs text-muted-foreground">Marketing Lead</p>
               </div>
               <svg
                 className={cn(
@@ -218,13 +217,12 @@ export function Header({ className }: HeaderProps) {
                 <div className="absolute right-0 z-20 mt-2 w-56 rounded-lg border border-border bg-background py-1 shadow-lg">
                   <div className="border-b border-border px-4 py-3 md:hidden">
                     <p className="text-sm font-medium text-foreground">
-                      Sarah Adams
+                      Jake K.
                     </p>
                     <p className="text-xs text-muted-foreground">
-                      Claims Manager
+                      Marketing Lead
                     </p>
                   </div>
-                  {/* CUSTOMIZE: Update dropdown menu items */}
                   <Link
                     href="/settings"
                     className="flex items-center gap-2 px-4 py-2 text-sm text-foreground hover:bg-muted"
