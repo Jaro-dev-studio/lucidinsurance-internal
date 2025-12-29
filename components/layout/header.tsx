@@ -54,15 +54,15 @@ export function Header({ className }: HeaderProps) {
       )}
     >
       <div className="flex h-14 items-center justify-between px-4 md:px-6">
-        {/* LucidAds Logo */}
+        {/* Lucid Logo */}
         <Link href="/" className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-            <svg className="h-5 w-5 text-primary-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            <svg className="h-5 w-5 text-primary-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
+              <rect x="6" y="6" width="12" height="12" rx="2" />
             </svg>
           </div>
-          <span className="text-lg font-semibold text-foreground">
-            LucidAds
+          <span className="text-lg font-bold tracking-tight text-foreground">
+            LUCID
           </span>
         </Link>
 

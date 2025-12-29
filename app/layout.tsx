@@ -15,10 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 /**
- * LucidAds - AI-Powered Advertising Management Platform
+ * Lucid - AI-Powered Advertising Management Platform
  */
 export const metadata: Metadata = {
-  title: "LucidAds - AI-Powered Advertising Dashboard",
+  title: "Lucid - AI-Powered Advertising Dashboard",
   description: "Unified advertising management platform with AI-powered insights. Track campaigns across Meta, Google, TikTok, and YouTube from a single dashboard.",
   keywords: ["advertising", "ads", "AI", "marketing", "Meta", "Google Ads", "TikTok", "analytics", "SaaS"],
 };
